@@ -25,6 +25,9 @@ BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth/include
 # Display
 TARGET_SCREEN_DENSITY := 320
 
+# Hardware
+-include device/lenovo/phoenix/hardware/BoardConfigHardware.mk
+
 # Kernel
 BOARD_DTBTOOL_ARGS := -2
 BOARD_KERNEL_IMAGE_NAME := Image
