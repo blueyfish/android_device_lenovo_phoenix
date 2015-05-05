@@ -30,6 +30,9 @@ TARGET_SCREEN_WIDTH := 1080
 # Configs
 include device/lenovo/phoenix/configs/configs.mk
 
+# Hardware
+include device/lenovo/phoenix/hardware/hardware.mk
+
 # Inherit from msm8916-common
 $(call inherit-product, device/cyanogen/msm8916-common/msm8916.mk)
 
