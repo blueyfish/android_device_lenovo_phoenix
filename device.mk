@@ -33,6 +33,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
 # USB
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+    persist.sys.isUsbOtgEnabled=true \
     persist.sys.usb.config=mtp
 
 PRODUCT_CHARACTERISTICS := tablet
