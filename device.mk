@@ -182,6 +182,7 @@ PRODUCT_PACKAGES += \
 
 # RIL
 PRODUCT_PACKAGES += \
+    libcnefeatureconfig \
     libxml2
 
 # GPS
