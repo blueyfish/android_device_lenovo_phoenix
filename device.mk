@@ -236,7 +236,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Sensors
 PRODUCT_PACKAGES += \
     sensors.msm8916 \
-    libcalmodule_common \
     calmodule.cfg
 
 # IPC router config
