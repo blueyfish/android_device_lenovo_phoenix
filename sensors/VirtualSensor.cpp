@@ -104,7 +104,7 @@ int VirtualSensor::injectEvents(sensors_event_t* data, int count)
 
 		if (mFreeSpace) {
 			sensors_event_t out;
-			if (algo->methods->convert(&event, &out, NULL))
+			if (algo->methods->convert(&event, &out))
 				continue;
 
 			out.version = sizeof(sensors_event_t);

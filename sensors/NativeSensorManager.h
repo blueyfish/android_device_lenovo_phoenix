@@ -49,7 +49,6 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #include "VirtualSensor.h"
 
 #include "sensors_extension.h"
-#include "sensors_XML.h"
 using namespace android;
 
 #define EVENT_PATH "/dev/input/"
@@ -143,7 +142,6 @@ public:
 	int activate(int handle, int enable);
 	int setDelay(int handle, int64_t ns);
 	int readEvents(int handle, sensors_event_t *data, int count);
-	int calibrate(int handle, struct cal_cmd_t *para);
 };
 
 #endif

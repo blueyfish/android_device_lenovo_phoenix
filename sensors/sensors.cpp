@@ -208,13 +208,7 @@ int sensors_poll_context_t::pollEvents(sensors_event_t* data, int count)
 
 int sensors_poll_context_t::calibrate(int handle, struct cal_cmd_t *para)
 {
-
-	int err = -1;
-	NativeSensorManager& sm(NativeSensorManager::getInstance());
-
-	err = sm.calibrate(handle, para);
-
-	return err;
+return -ENOSYS;
 }
 
 /*****************************************************************************/
