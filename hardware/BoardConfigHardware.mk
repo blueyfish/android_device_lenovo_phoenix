@@ -20,6 +20,11 @@ TARGET_PROCESS_SDK_VERSION_OVERRIDE := \
     /system/bin/mediaserver=22 \
     /system/vendor/bin/mm-qcamera-daemon=22
 
+# Charger
+BOARD_CHARGER_ENABLE_SUSPEND := true
+BOARD_CHARGER_DISABLE_INIT_BLANK := true
+BACKLIGHT_PATH := /sys/class/leds/lcd-backlight/brightness
+
 # GPS
 TARGET_NO_RPC := true
 
