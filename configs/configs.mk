@@ -33,6 +33,10 @@ PRODUCT_COPY_FILES += \
     $(DEVICE_CONFIGS_PATH)/keylayout/hall_sensor.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/hall_sensor.kl \
     $(DEVICE_CONFIGS_PATH)/keylayout/gpio-keys.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/gpio-keys.kl
 
+# Media
+PRODUCT_COPY_FILES += \
+    $(DEVICE_CONFIGS_PATH)/media/media_profiles_V1_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_V1_0.xml
+
 # Permissions
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.audio.low_latency.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.audio.low_latency.xml \
