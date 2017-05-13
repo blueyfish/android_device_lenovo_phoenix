@@ -46,4 +46,5 @@ PRODUCT_PACKAGES += \
 
 # Shims
 PRODUCT_PACKAGES += \
-    libshim_atomic
+    libshim_atomic \
+    libshim_camera
