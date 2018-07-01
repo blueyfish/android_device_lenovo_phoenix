@@ -334,4 +334,8 @@
     <string name="config_perf_profile_prop">sys.perf.profile</string>
     <string name="config_perf_profile_default_entry">1</string>
 
+    <!-- Whether a software navigation bar should be shown. NOTE: in the future this may be
+         autodetected from the Configuration. -->
+    <bool name="config_showNavigationBar">true</bool>
+
 </resources>
