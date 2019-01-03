@@ -1,0 +1,2 @@
+#============= init ==============
+allow init sysfs_leds:lnk_file { r_file_perms };
