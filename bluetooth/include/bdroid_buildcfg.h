@@ -18,5 +18,4 @@
 #define _BDROID_BUILDCFG_H
 
 #define BTM_DEF_LOCAL_NAME   "Lenovo PHAB Plus"
-#define BLUETOOTH_QTI_SW TRUE
 #endif
