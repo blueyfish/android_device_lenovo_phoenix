@@ -12,7 +12,7 @@
 /dev/block/bootdevice/by-name/userdata       /data             ext4    nosuid,nodev,barrier=1,noauto_da_alloc,discard    wait,check,encryptable=footer
 /dev/block/bootdevice/by-name/config         /frp              emmc    defaults                                          defaults
 /dev/block/bootdevice/by-name/cache          /cache            ext4    noatime,nosuid,nodev,barrier=1,noauto_da_alloc    wait,check
-
+/dev/block/bootdevice/by-name/modem          /firmware         vfat    ro,shortname=lower,uid=1000,gid=1026,dmask=227,fmask=337,context=u:object_r:firmware_file:s0    wait
 
 /devices/soc.0/7864900.sdhci/mmc_host        auto              vfat    nosuid,nodev                                      wait,voldmanaged=sdcard1:auto,noemulatedsd
 /devices/platform/msm_hsusb                  auto              vfat    nosuid,nodev                                      wait,voldmanaged=usbotg:auto
