@@ -44,4 +44,13 @@ LOCAL_MODULE_PATH  := $(TARGET_OUT_ETC)/hostapd
 LOCAL_SRC_FILES    := hostapd.deny
 include $(BUILD_PREBUILT)
 
+# Create a link for the WCNSS NV and WCNSS dictionary files,
+# linked to /persist
+$(shell mkdir -p $(TARGET_OUT)/etc/firmware/wlan/prima; \
+    ln -sf /persist/WCNSS_qcom_wlan_nv.bin \
+	    $(TARGET_OUT)/etc/firmware/wlan/prima/WCNSS_qcom_wlan_nv.bin)
+$(shell mkdir -p $(TARGET_OUT)/etc/firmware/wlan/prima; \
+    ln -sf /persist/WCNSS_wlan_dictionary.dat \
+	    $(TARGET_OUT)/etc/firmware/wlan/prima/WCNSS_wlan_dictionary.dat)
+
 endif
