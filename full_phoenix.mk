@@ -15,17 +15,15 @@
 #
 
 # Inherit from those products. Most specific first.
-ifneq ($(FERRARI_32_BIT),true)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
-endif
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit from ferrari device
-$(call inherit-product, device/xiaomi/ferrari/device.mk)
+# Inherit from phoenix device
+$(call inherit-product, device/lenovo/phoenix/device.mk)
 
 # Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := ferrari
-PRODUCT_NAME := full_ferrari
-PRODUCT_BRAND := Xiaomi
-PRODUCT_MODEL := MI 4i
-PRODUCT_MANUFACTURER := Xiaomi
+PRODUCT_DEVICE := phoenix
+PRODUCT_NAME := full_phoenix
+PRODUCT_BRAND := Lenovo
+PRODUCT_MODEL := Lenovo PHAB Plus
+PRODUCT_MANUFACTURER := LENOVO

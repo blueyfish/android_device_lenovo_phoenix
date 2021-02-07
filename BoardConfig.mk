@@ -13,9 +13,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-BOARD_VENDOR := xiaomi
+BOARD_VENDOR := lenovo
 
-LOCAL_PATH := device/xiaomi/ferrari
+LOCAL_PATH := device/lenovo/phoenix
 
 # Include path
 TARGET_SPECIFIC_HEADER_PATH := $(LOCAL_PATH)/include
@@ -30,7 +30,6 @@ TARGET_NO_BOOTLOADER := false
 TARGET_NO_KERNEL := false
 
 # Architecture
-ifneq ($(FERRARI_32_BIT),true)
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-a
 TARGET_CPU_ABI := arm64-v8a
@@ -45,13 +44,6 @@ TARGET_2ND_CPU_VARIANT := cortex-a53
 
 TARGET_BOARD_SUFFIX := _64
 TARGET_USES_64_BIT_BINDER := true
-else
-TARGET_ARCH := arm
-TARGET_ARCH_VARIANT := armv7-a-neon
-TARGET_CPU_ABI := armeabi-v7a
-TARGET_CPU_ABI2 := armeabi
-TARGET_CPU_VARIANT := cortex-a53
-endif
 TARGET_BOARD_PLATFORM := msm8916
 TARGET_BOARD_PLATFORM_GPU := qcom-adreno405
 
@@ -73,19 +65,12 @@ BOARD_KERNEL_BASE                  := 0x80000000
 BOARD_KERNEL_PAGESIZE              := 2048
 BOARD_KERNEL_TAGS_OFFSET           := 0x01E00000
 BOARD_RAMDISK_OFFSET               := 0x02000000
-TARGET_KERNEL_SOURCE               := kernel/xiaomi/ferrari
-ifneq ($(FERRARI_32_BIT),true)
+TARGET_KERNEL_SOURCE               := kernel/lenovo/phoenix
 TARGET_KERNEL_ARCH := arm64
-TARGET_KERNEL_CONFIG := ferrari_debug_defconfig
+TARGET_KERNEL_CONFIG := phoenix_defconfig
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-android-
 TARGET_KERNEL_HEADER_ARCH := arm64
 TARGET_USES_UNCOMPRESSED_KERNEL := true
-else
-TARGET_KERNEL_CONFIG := cyanogenmod_ferrari_defconfig
-endif
-ifneq ($(TARGET_BUILD_VARIANT),user)
-TARGET_KERNEL_ADDITIONAL_CONFIG := cyanogenmod_debug_config
-endif
 
 # Audio
 BOARD_USES_ALSA_AUDIO := true
@@ -136,7 +121,7 @@ COMMON_GLOBAL_CFLAGS += -DNO_SECURE_DISCARD -DUSE_RIL_VERSION_10
 COMMON_GLOBAL_CPPFLAGS += -DNO_SECURE_DISCARD -DUSE_RIL_VERSION_10
 
 # CMHW
-BOARD_HARDWARE_CLASS := device/xiaomi/ferrari/cmhw
+BOARD_HARDWARE_CLASS := device/lenovo/phoenix/cmhw
 
 # FM
 TARGET_QCOM_NO_FM_FIRMWARE := true
@@ -240,5 +225,5 @@ TARGET_USES_QCOM_WCNSS_QMI       := true
 
 
 # inherit from the proprietary version
--include vendor/xiaomi/ferrari/BoardConfigVendor.mk
+-include vendor/lenovo/phoenix/BoardConfigVendor.mk
 

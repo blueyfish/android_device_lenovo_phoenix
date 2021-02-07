@@ -12,23 +12,23 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-$(call inherit-product, device/xiaomi/ferrari/full_ferrari.mk)
+$(call inherit-product, device/lenovo/phoenix/full_phoenix.mk)
 
 # Inherit some common CM stuff.
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := ferrari
-PRODUCT_NAME := cm_ferrari
-PRODUCT_BRAND := Xiaomi
-PRODUCT_MODEL := MI 4i
-PRODUCT_MANUFACTURER := Xiaomi
+PRODUCT_DEVICE := phoenix
+PRODUCT_NAME := cm_phoenix
+PRODUCT_BRAND := Lenovo
+PRODUCT_MODEL := Lenovo PHAB Plus
+PRODUCT_MANUFACTURER := LENOVO
 
-PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+PRODUCT_GMS_CLIENTID_BASE := android-lenovo
 
 # Build prop overrides
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    TARGET_DEVICE="ferrari" \
-    PRODUCT_NAME="ferrari" \
-    BUILD_FINGERPRINT="Xiaomi/ferrari/ferrari:5.1.1/LMY48B:userdebug/test-keys" \
-    PRIVATE_BUILD_DESC="ferrari-userdebug 5.1.1 LMY48B test-keys"
+    TARGET_DEVICE="phoenix" \
+    PRODUCT_NAME="phoenix" \
+    BUILD_FINGERPRINT="Lenovo/PB1-770M/PB1-770M:5.1.1/S100/PB1-770M_S000409_160923_ROW:user/release-keys" \
+    PRIVATE_BUILD_DESC="msm8916_64-user 5.1.1 LMY47V eng.build.20160923.120019 release-keys"
