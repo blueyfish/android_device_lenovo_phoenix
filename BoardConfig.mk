@@ -176,7 +176,7 @@ include device/qcom/sepolicy/sepolicy.mk
 
 # SELinux
 BOARD_SEPOLICY_DIRS += \
-    device/xiaomi/ferrari/sepolicy
+    device/lenovo/phoenix/sepolicy
 
 BOARD_SEPOLICY_UNION += \
     file.te \
