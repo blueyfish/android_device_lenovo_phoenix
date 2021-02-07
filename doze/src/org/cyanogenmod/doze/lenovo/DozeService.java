@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.cyanogenmod.doze.ferrari;
+package org.cyanogenmod.doze.lenovo;
 
 import android.app.Activity;
 import android.app.IntentService;

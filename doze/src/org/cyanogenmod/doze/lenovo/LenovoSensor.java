@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.cyanogenmod.doze.ferrari;
+package org.cyanogenmod.doze.lenovo;
 
 import android.content.ActivityNotFoundException;
 import android.content.Context;
@@ -30,9 +30,9 @@ import android.os.SystemClock;
 import android.provider.MediaStore;
 import android.util.Log;
 
-public abstract class FerrariSensor {
+public abstract class LenovoSensor {
 
-    private static final String TAG = "FerrariSensor";
+    private static final String TAG = "LenovoSensor";
 
     private static final String DOZE_INTENT = "com.android.systemui.doze.pulse";
 
@@ -48,14 +48,14 @@ public abstract class FerrariSensor {
 
     private WakeLock mSensorWakeLock;
 
-    public FerrariSensor(Context context, int type) {
+    public LenovoSensor(Context context, int type) {
         mContext = context;
         mType = type;
         mPowerManager = (PowerManager) mContext.getSystemService(Context.POWER_SERVICE);
         mSensorManager = (SensorManager) mContext.getSystemService(Context.SENSOR_SERVICE);
         mSensor = mSensorManager.getDefaultSensor(mType);
         mSensorWakeLock = mPowerManager.newWakeLock(PowerManager.PARTIAL_WAKE_LOCK,
-                "FerrariSensorWakeLock");
+                "LenovoSensorWakeLock");
     }
 
     public void enable() {

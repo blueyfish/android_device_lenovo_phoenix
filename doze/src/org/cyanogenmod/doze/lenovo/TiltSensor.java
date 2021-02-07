@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.cyanogenmod.doze.ferrari;
+package org.cyanogenmod.doze.lenovo;
 
 import android.content.Context;
 import android.hardware.Sensor;
@@ -22,22 +22,25 @@ import android.hardware.SensorEvent;
 import android.os.SystemClock;
 import android.util.Log;
 
-public class ProximitySensor extends FerrariSensor {
+public class TiltSensor extends LenovoSensor {
 
     private static final boolean DEBUG = false;
-    private static final String TAG = "ProximitySensor";
-    private long mEntryTimestamp;
-    private static final int DELTA_MS = 250;  // 250ms
+    private static final String TAG = "TiltSensor";
 
-    public ProximitySensor(Context context) {
-        super(context, Sensor.TYPE_PROXIMITY);
+    private static final int MIN_PULSE_INTERVAL_MS = 2500;
+
+    private long mEntryTimestamp;
+    private AccelSensor mAccelSensor;
+
+    public TiltSensor(Context context) {
+        super(context, Sensor.TYPE_TILT_DETECTOR);
     }
 
     @Override
     public void enable() {
         if (DEBUG) Log.d(TAG, "Enabling");
         super.enable();
-        mEntryTimestamp = 0;
+        mEntryTimestamp = SystemClock.elapsedRealtime();
     }
 
     @Override
@@ -51,12 +54,15 @@ public class ProximitySensor extends FerrariSensor {
         if (DEBUG) Log.d(TAG, "Got sensor event: " + event.values[0]);
 
         long delta = SystemClock.elapsedRealtime() - mEntryTimestamp;
-        boolean isNear = event.values[0] == 0;
-
-        if ( !isNear && delta < DELTA_MS )
-        {
-            launchDozePulse();
+        if (delta < MIN_PULSE_INTERVAL_MS) {
+            return;
+        } else {
+            mEntryTimestamp = SystemClock.elapsedRealtime();
         }
-        mEntryTimestamp = SystemClock.elapsedRealtime();
+
+        if (event.values[0] == 1) {
+            mAccelSensor = new AccelSensor(mContext);
+            mAccelSensor.enable();
+        }
     }
 }

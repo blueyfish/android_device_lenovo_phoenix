@@ -14,14 +14,14 @@
  * limitations under the License.
  */
 
-package org.cyanogenmod.doze.ferrari;
+package org.cyanogenmod.doze.lenovo;
 
 import android.content.Context;
 import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 import android.util.Log;
 
-public class AccelSensor extends FerrariSensor {
+public class AccelSensor extends LenovoSensor {
 
     private static final boolean DEBUG = false;
     private static final String TAG = "AccelSensor";

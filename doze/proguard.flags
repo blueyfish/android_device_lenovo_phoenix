@@ -1,3 +1,3 @@
--keep class org.cyanogenmod.doze.ferrari.* {
+-keep class org.cyanogenmod.doze.lenovo.* {
   *;
 }
