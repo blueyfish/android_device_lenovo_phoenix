@@ -129,9 +129,9 @@ PRODUCT_PACKAGES += \
     libtinyxml \
     memtrack.msm8916
 
-# doze
+# Doze
 PRODUCT_PACKAGES += \
-    FerrariDoze
+    LenovoDoze
 
 # Filesystem
 PRODUCT_PACKAGES += \
