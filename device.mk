@@ -285,11 +285,6 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.bluetooth_le.xml:system/etc/permissions/android.hardware.bluetooth_le.xml \
     frameworks/native/data/etc/android.software.print.xml:system/etc/permissions/android.software.print.xml
 
-# Thermal config
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/thermal-engine-8939.conf:system/etc/thermal-engine-8939.conf
-
-
 # ANT+
 PRODUCT_PACKAGES += \
     AntHalService \
