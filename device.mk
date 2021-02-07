@@ -40,7 +40,6 @@ PRODUCT_CHARACTERISTICS := tablet
 # Ramdisk
 PRODUCT_PACKAGES += \
     fstab.qcom \
-    chargeonlymode \
     init.qcom.rc \
     init.target.rc \
     init.qcom.usb.rc \
