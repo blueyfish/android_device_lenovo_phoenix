@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-$(call inherit-product-if-exists, vendor/xiaomi/ferrari/ferrari-vendor.mk)
+$(call inherit-product-if-exists, vendor/lenovo/phoenix/phoenix-vendor.mk)
 
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
