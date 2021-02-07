@@ -233,6 +233,12 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.data.netmgrd.qos.enable=true \
     ro.data.large_tcp_window_size=true
 
+# Sensors
+PRODUCT_PACKAGES += \
+    sensors.msm8916 \
+    libcalmodule_common \
+    calmodule.cfg
+
 # IPC router config
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sec_config:system/etc/sec_config
