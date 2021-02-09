@@ -231,8 +231,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     wifi.interface=wlan0 \
     wifi.supplicant_scan_interval=15 \
     wlan.driver.ath=0 \
-    ro.use_data_netmgrd=true \
-    persist.data.netmgrd.qos.enable=true \
     ro.data.large_tcp_window_size=true
 
 # Sensors
@@ -283,15 +281,6 @@ ADDITIONAL_DEFAULT_PROPERTIES += \
 # Connectivity Engine support
 PRODUCT_PACKAGES += \
     libcnefeatureconfig
-
-ifeq ($(BOARD_USES_QCNE),true)
-PRODUCT_PACKAGES += \
-    services-ext \
-    init.cne.rc
-
-PRODUCT_PROPERTY_OVERRIDES += \
-    persist.cne.feature=4
-endif
 
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.service.adb.enable=1 \
