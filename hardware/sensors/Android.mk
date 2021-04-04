@@ -7,7 +7,12 @@ LOCAL_MODULE_RELATIVE_PATH := hw
 LOCAL_MODULE_TAGS := optional
 LOCAL_VENDOR_MODULE := true
 
-LOCAL_CFLAGS += -DLOG_TAG=\"Sensors\"
+LOCAL_CFLAGS += \
+	-DLOG_TAG=\"Sensors\" \
+	-Wno-format \
+	-Wno-unused-private-field \
+	-Wno-unused-variable
+
 
 LOCAL_C_INCLUDES := $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr/include
 LOCAL_ADDITIONAL_DEPENDENCIES := $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr
