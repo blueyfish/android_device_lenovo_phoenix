@@ -74,4 +74,7 @@
          For example, a device with notification and battery lights that supports
          pulsating and RGB control would set this config to 75. -->
     <integer name="config_deviceLightCapabilities">67</integer>
+
+    <!-- Default color for notification LED is blue. -->
+    <color name="config_defaultNotificationColor">#ff00ffff</color>
 </resources>
