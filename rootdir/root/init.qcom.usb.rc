@@ -831,8 +831,7 @@ on property:sys.usb.config=mtp
     write /sys/class/android_usb/android0/idVendor 17EF
     write /sys/class/android_usb/android0/idProduct 78D0
     write /sys/class/android_usb/android0/functions mtp,mass_storage
-    write /sys/class/android_usb/android0/f_mass_storage/bicr 1
-    write /sys/class/android_usb/android0/f_mass_storage/lun/file /system/Lenovo_Suite/LenovoSuite_pad.iso
+    write /sys/class/android_usb/android0/f_mass_storage/bicr 0
     write /sys/class/android_usb/android0/enable 1
     setprop sys.usb.state ${sys.usb.config}
 
@@ -842,8 +841,7 @@ on property:sys.usb.config=mtp,adb
     write /sys/class/android_usb/android0/idVendor 17EF
     write /sys/class/android_usb/android0/idProduct 78D1
     write /sys/class/android_usb/android0/functions mtp,mass_storage,adb
-    write /sys/class/android_usb/android0/f_mass_storage/bicr 1
-    write /sys/class/android_usb/android0/f_mass_storage/lun/file /system/Lenovo_Suite/LenovoSuite_pad.iso
+    write /sys/class/android_usb/android0/f_mass_storage/bicr 0
     write /sys/class/android_usb/android0/enable 1
     start adbd
     setprop sys.usb.state ${sys.usb.config}
@@ -1235,8 +1233,7 @@ on property:sys.usb.config=bicr
     write /sys/class/android_usb/android0/idVendor 17EF
     write /sys/class/android_usb/android0/idProduct 78D6
     write /sys/class/android_usb/android0/functions mass_storage
-    write /sys/class/android_usb/android0/f_mass_storage/bicr 1
-    write /sys/class/android_usb/android0/f_mass_storage/lun/file /system/Lenovo_Suite/LenovoSuite_pad.iso
+    write /sys/class/android_usb/android0/f_mass_storage/bicr 0
     write /sys/class/android_usb/android0/enable 1
     setprop sys.usb.state ${sys.usb.config}
 
@@ -1246,8 +1243,7 @@ on property:sys.usb.config=bicr,adb
     write /sys/class/android_usb/android0/idVendor 17EF
     write /sys/class/android_usb/android0/idProduct 78D7
     write /sys/class/android_usb/android0/functions mass_storage,adb
-    write /sys/class/android_usb/android0/f_mass_storage/bicr 1
-    write /sys/class/android_usb/android0/f_mass_storage/lun/file /system/Lenovo_Suite/LenovoSuite_pad.iso
+    write /sys/class/android_usb/android0/f_mass_storage/bicr 0
     write /sys/class/android_usb/android0/enable 1
     start adbd
     setprop sys.usb.state ${sys.usb.config}
