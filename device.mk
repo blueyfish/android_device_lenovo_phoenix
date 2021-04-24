@@ -42,8 +42,10 @@ PRODUCT_CHARACTERISTICS := tablet
 PRODUCT_PACKAGES += \
     fstab.qcom \
     init.qcom.rc \
+    init.qcom.power.rc \
     init.target.rc \
     init.qcom.usb.rc \
+    init.recovery.qcom.rc \
     ueventd.qcom.rc \
     init.class_main.sh \
     init.qcom.class_core.sh \
@@ -55,7 +57,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     init.qcom.bt.sh \
     init.qcom.fm.sh \
-    init.qcom.post_boot.sh \
     init.qcom.wifi.sh
 
 # Audio
