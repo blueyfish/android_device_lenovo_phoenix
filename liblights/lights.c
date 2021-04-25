@@ -155,9 +155,6 @@ void init_globals(void)
 
     // init the mutex
     pthread_mutex_init(&g_lock, NULL);
-
-    // reset leds on init, fixes red stuck right after bootup
-    reset_leds();
 }
 
 static int
@@ -421,6 +418,9 @@ close_lights(struct light_device_t *dev)
 static int open_lights(const struct hw_module_t* module, char const* name,
         struct hw_device_t** device)
 {
+    // reset leds on init, fixes red stuck right after bootup
+    reset_leds();
+
     int (*set_light)(struct light_device_t* dev,
             struct light_state_t const* state);
 
