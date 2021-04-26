@@ -275,7 +275,6 @@ set_speaker_light_locked(struct light_device_t* dev,
     int blink;
     int onMS, offMS;
     unsigned int colorRGB;
-    char breath_pattern[64] = { 0, };
     struct color *nearest = NULL;
 
     if(!dev) {
