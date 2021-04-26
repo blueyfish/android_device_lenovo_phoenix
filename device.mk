@@ -119,6 +119,10 @@ PRODUCT_BOOT_JARS += qcmediaplayer
 PRODUCT_PACKAGES += \
     charger_res_images
 
+# Dolby
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/dolby/dax-default.xml:system/vendor/etc/dolby/dax-default.xml
+
 # Display
 PRODUCT_PACKAGES += \
     copybit.msm8916 \
