@@ -99,8 +99,10 @@ QCOM_BT_USE_SMD_TTY := true
 BLUETOOTH_HCI_USE_MCT := true
 
 # Camera
-# TO DO - Put correct sensors and support
-BOARD_CAMERA_SENSORS := imx135_cp8675 imx214_cp8675 ov5648_cp8675
+BOARD_CAMERA_SENSORS := \
+    ov5693 \
+    ov13850
+
 TARGET_USE_VENDOR_CAMERA_EXT := true
 USE_DEVICE_SPECIFIC_CAMERA := true
 
