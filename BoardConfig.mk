@@ -38,5 +38,8 @@ TARGET_KERNEL_CONFIG := lineageos_phoenix_defconfig
 # Properties
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 
+# Recovery
+TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/configs/rootdir/fstab.qcom
+
 # inherit from the proprietary version
 -include vendor/lenovo/phoenix/BoardConfigVendor.mk
