@@ -41,6 +41,11 @@ PRODUCT_COPY_FILES += \
     $(DEVICE_CONFIGS_PATH)/data/qmi_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/data/qmi_config.xml \
     $(DEVICE_CONFIGS_PATH)/data/dsi_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/data/dsi_config.xml
 
+# Rootdir
+PRODUCT_COPY_FILES += \
+    $(DEVICE_CONFIGS_PATH)/rootdir/fstab.qcom:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.qcom \
+    $(DEVICE_CONFIGS_PATH)/rootdir/init.target.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.target.rc
+
 # Thermal
 PRODUCT_COPY_FILES += \
     $(DEVICE_CONFIGS_PATH)/thermal-engine.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf
