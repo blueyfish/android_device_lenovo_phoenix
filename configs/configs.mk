@@ -16,6 +16,10 @@
 
 DEVICE_CONFIGS_PATH := device/lenovo/phoenix/configs
 
+# Audio
+PRODUCT_COPY_FILES += \
+    $(DEVICE_CONFIGS_PATH)/audio/mixer_paths_skuk.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths_skuk.xml
+
 # Keylayout
 PRODUCT_COPY_FILES += \
     $(DEVICE_CONFIGS_PATH)/keylayout/hall_sensor.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/hall_sensor.kl \
