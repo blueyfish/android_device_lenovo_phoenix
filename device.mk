@@ -55,4 +55,4 @@ PRODUCT_COPY_FILES += \
 $(call inherit-product, device/cyanogen/msm8916-common/msm8916.mk)
 
 # Inherit from vendor blobs
-#$(call inherit-product, vendor/lenovo/phoenix/phoenix-vendor.mk)
+$(call inherit-product, vendor/lenovo/phoenix/phoenix-vendor.mk)
