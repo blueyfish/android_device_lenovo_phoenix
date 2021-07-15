@@ -33,7 +33,7 @@ TARGET_KERNEL_SOURCE := kernel/lenovo/phoenix
 TARGET_KERNEL_CONFIG := lineageos_phoenix_defconfig
 
 # Properties
-#TARGET_PRODUCT_PROP += $(DEVICE_PATH)/product.prop
+TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 
 # inherit from the proprietary version
 -include vendor/lenovo/phoenix/BoardConfigVendor.mk
