@@ -26,3 +26,14 @@ persist.radio.ecc_hard_count=1
 persist.radio.multisim.config=dsds
 rild.libpath=/system/vendor/lib64/libril-qc-qmi-1.so
 ro.telephony.default_network=9,1
+
+# USB ID
+ro.usb.id.midi=90BA
+ro.usb.id.midi_adb=90BB
+ro.usb.id.mtp=78D0
+ro.usb.id.mtp_adb=78D1
+ro.usb.id.ptp=78D2
+ro.usb.id.ptp_adb=78D3
+ro.usb.id.ums=78CE
+ro.usb.id.ums_adb=78CF
+ro.usb.vid=17EF
