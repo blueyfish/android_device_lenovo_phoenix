@@ -26,3 +26,7 @@ PRODUCT_COPY_FILES += \
     $(DEVICE_HARDWARE_PATH)/gps/izat.conf:system/etc/izat.conf \
     $(DEVICE_HARDWARE_PATH)/gps/quipc.conf:system/etc/quipc.conf \
     $(DEVICE_HARDWARE_PATH)/gps/sap.conf:system/etc/sap.conf
+
+# Lights
+PRODUCT_PACKAGES += \
+    android.hardware.light@2.0-service.phoenix
