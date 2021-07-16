@@ -52,5 +52,8 @@ TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 # Recovery
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/configs/rootdir/fstab.qcom
 
+# SELinux
+BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
+
 # inherit from the proprietary version
 -include vendor/lenovo/phoenix/BoardConfigVendor.mk
