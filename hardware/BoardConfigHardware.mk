@@ -17,3 +17,7 @@
 # GPS
 TARGET_NO_RPC := true
 USE_DEVICE_SPECIFIC_GPS := true
+
+# Shims
+TARGET_LD_SHIM_LIBS := \
+    /system/vendor/lib/libmmcamera2_imglib_modules.so|libshim_atomic.so
