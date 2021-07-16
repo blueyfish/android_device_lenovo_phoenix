@@ -274,7 +274,7 @@ etc/firmware/venus.mdt:vendor/firmware/venus.mdt
 vendor/lib64/libcalmodule_memsic.so
 
 # Thermal - from kipper TOS373M
-bin/thermal-engine:vendor/bin/thermal-engine|e1ae1e2fb7a05b59ebefe266f0a1dbada6bb75f8
+bin/thermal-engine:vendor/bin/thermal-engine|a5d07cfa11bf6c765786ddcff1f7b3eb9bf38f05
 vendor/lib64/libthermalclient.so|c624da1923420a89f97e464ae2499d7fade4ab3c
 vendor/lib64/libthermalioctl.so|35f9078819a7ec2cbfb34f9170be55c4308feb10
 vendor/lib/libthermalclient.so|6c9bde1d2d2896b254ea412a256215cfc9e1640d
