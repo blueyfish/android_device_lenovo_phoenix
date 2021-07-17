@@ -55,5 +55,8 @@ TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/configs/rootdir/fstab.qcom
 # SELinux
 BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
 
+# Vendor security patch level
+VENDOR_SECURITY_PATCH := 2016-06-01
+
 # inherit from the proprietary version
 -include vendor/lenovo/phoenix/BoardConfigVendor.mk
