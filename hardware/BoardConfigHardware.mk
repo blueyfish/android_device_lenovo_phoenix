@@ -25,3 +25,6 @@ TARGET_RECOVERY_DEVICE_MODULES := libinit_phoenix
 # Shims
 TARGET_LD_SHIM_LIBS += \
     /system/vendor/lib/libmmcamera2_imglib_modules.so|libshim_atomic.so
+
+# Wi-Fi
+TARGET_PROVIDES_WCNSS_QMI := true
