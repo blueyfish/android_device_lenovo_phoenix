@@ -18,6 +18,7 @@ DEVICE_CONFIGS_PATH := device/lenovo/phoenix/configs
 
 # Audio
 PRODUCT_COPY_FILES += \
+    $(DEVICE_CONFIGS_PATH)/audio/aanc_tuning_mixer.txt:$(TARGET_COPY_OUT_VENDOR)/etc/aanc_tuning_mixer.txt \
     $(DEVICE_CONFIGS_PATH)/audio/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_configuration.xml \
     $(DEVICE_CONFIGS_PATH)/audio/mixer_paths_skuk.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths_skuk.xml
 
