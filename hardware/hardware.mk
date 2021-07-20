@@ -16,6 +16,10 @@
 
 DEVICE_HARDWARE_PATH := device/lenovo/phoenix/hardware
 
+# Audio
+PRODUCT_PACKAGES += \
+    android.hardware.bluetooth.a2dp@1.0-impl
+
 # GPS
 PRODUCT_PACKAGES += \
     gps.msm8916
