@@ -33,6 +33,9 @@ include device/lenovo/phoenix/configs/configs.mk
 # Hardware
 include device/lenovo/phoenix/hardware/hardware.mk
 
+# System Properties
+-include device/lenovo/phoenix/system_prop.mk
+
 # Inherit from msm8916-common
 $(call inherit-product, device/cyanogen/msm8916-common/msm8916.mk)
 
