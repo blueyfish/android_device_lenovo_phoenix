@@ -1,10 +1,10 @@
-# ADSP
+# ADSP - from kipper TOS373M
 bin/adsprpcd:vendor/bin/adsprpcd|95030b23730f77beecd74338e9f997e7b853e7a5
 vendor/lib64/libadsprpc.so|ad8ed801997d8a35a4f600649adc8180d0e7eab7
 vendor/lib/libadsprpc.so|0f226a1649449b71c1c8fc3463dba7692c507c87
 vendor/lib/libfastcvopt.so|0d2d17edee81f6c6bfb9251f1b6d657411b73b25
 
-# Audio
+# Audio - from kipper TOS373M
 vendor/lib64/libacdb-fts.so|f6ebc3b3c1275ce987d961af014d3d8fd69eb966
 vendor/lib64/libacdbloader.so|41be3da9e40e4f7d89e601df4309f2437130248f
 vendor/lib64/libacdbrtac.so|b66a2856515a023dd90b5fb19f791bd086680bc2
@@ -169,9 +169,9 @@ vendor/lib/libOpenCL.so|9c3f63df298c155a526d075c9d2643d01b59f98a
 vendor/lib/libsc-a3xx.so|a03fc9f0c929cb4adf013f8a463cfbef68d48090
 vendor/lib/libscale.so|972cbd87794b4ce0a5c23db946acbafd4cd6d073
 
-# Graphics firmware
-etc/firmware/a420_pfp.fw:vendor/firmware/a420_pfp.fw
-etc/firmware/a420_pm4.fw:vendor/firmware/a420_pm4.fw
+# Graphics firmware - from kipper TOS373M
+etc/firmware/a420_pfp.fw:vendor/firmware/a420_pfp.fw|ceb61d9f1385b3f2956d72f33e0bd43cb12f72f0
+etc/firmware/a420_pm4.fw:vendor/firmware/a420_pm4.fw|96addc1f5cb6dd3a57fc40ef0a6ba8721d5b601f
 
 # Graphics RenderScript - from bullhead OPM7.181205.001
 vendor/lib64/librs_adreno.so|18e913b6d8f79e4b8563a8c8a0b2475e609d4813
@@ -237,7 +237,7 @@ vendor/lib/libqmiservices.so|fab93a6ae9eac9e81a245bba13ee891de23dd0fe
 vendor/lib/libqmi.so|84ec6a6d853aa00ed32f60d3a58db496567a9f38
 vendor/lib/libsmemlog.so|c632a70764ee1d6416ce1758f4d10cd6983d204d
 
-# Radio - from kipper TOS373M
+# Radio - from kipper TOS373M, OnePlus 3 OxygenOS Open Beta 26/17
 -app/shutdownlistener/shutdownlistener.apk:vendor/app/shutdownlistener/shutdownlistener.apk|40c6a898ce1fd66037490ab472fa3695ae97c831
 bin/netmgrd:vendor/bin/netmgrd|c7ec4849b808f64e6414b2180ed16122f757d963
 bin/qmuxd:vendor/bin/qmuxd|e1e334eea46eebba048d8e3399166604ccba7a00
