@@ -37,6 +37,12 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.light@2.0-service.phoenix
 
+# Sensor HAL
+PRODUCT_PACKAGES += \
+    android.hardware.sensors@1.0-impl \
+    calmodule.cfg \
+    sensors.msm8916
+
 # Shims
 PRODUCT_PACKAGES += \
     libshim_atomic
