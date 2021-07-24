@@ -272,9 +272,6 @@ etc/firmware/venus.b04:vendor/firmware/venus.b04
 etc/firmware/venus.mbn:vendor/firmware/venus.mbn
 etc/firmware/venus.mdt:vendor/firmware/venus.mdt
 
-# Sensors
-vendor/lib64/libcalmodule_memsic.so
-
 # Thermal - from kipper TOS373M
 bin/thermal-engine:vendor/bin/thermal-engine|a5d07cfa11bf6c765786ddcff1f7b3eb9bf38f05
 vendor/lib64/libthermalclient.so|c624da1923420a89f97e464ae2499d7fade4ab3c
