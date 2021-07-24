@@ -62,10 +62,10 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 
 static float otpMatrix[9] = {0.0};
-static double fPassMagPara[9] = {1.0,0.0,0.0,  0.0,1.0,0.0,  0.0,0.0,1.0};		//Mag cal para unit matrix
-//static double fPassMagPara[9] = {0.999295525552538,	-0.0124731031991645,	0.138618382808433,
-//				  -0.0154059458485961,	0.936868202951643,	-0.0118286750114505,
-//				   0.0342214763443447,	-0.00431295803122358,	1.10875448999782};	//with card u800_3524
+//static double fPassMagPara[9] = {1.0,0.0,0.0,  0.0,1.0,0.0,  0.0,0.0,1.0};		//Mag cal para unit matrix
+static double fPassMagPara[9] = {0.999295525552538,	-0.0124731031991645,	0.138618382808433,
+				  -0.0154059458485961,	0.936868202951643,	-0.0118286750114505,
+				   0.0342214763443447,	-0.00431295803122358,	1.10875448999782};	//with card u800_3524
 
 static uint8 algoInit = 0;
 static uint8 bCalStatusTemp = 0;
@@ -261,7 +261,7 @@ void MsensorSet(void)
 	static int fd = -1;
 	//ALOGE("memsicset Please do set\n");
 	if(fd < 0){
-		fd = open("/dev/mmc3416x", O_RDWR);
+		fd = open("/dev/mmc3524x", O_RDWR);
 		if(fd < 0){
 			ALOGE("memsicset open dev node faild!\n");
 		}
@@ -281,7 +281,7 @@ void MsensorRdOtp(void)
 	data[0] = 0x1b;	//0x1b otp addr
 	data[1] = 4;//read nums
 	if(fd < 0){
-		fd = open("/dev/mmc3416x", O_RDWR);//mmc3416x
+		fd = open("/dev/mmc3524x", O_RDWR);//mmc3524x
 		if(fd < 0){
 			ALOGE("memsicotp open dev node faild!\n");
 		}
