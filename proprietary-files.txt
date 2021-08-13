@@ -110,7 +110,7 @@ vendor/lib64/libQSEEComAPI.so|5ec09d3085cc6a7157ed094d677bbfd1479fbac4
 vendor/lib64/librpmb.so|25bfd9f541db45756cf0b03bcc8284a90408ff18
 vendor/lib64/libssd.so|4e1ca3d1f0dc7deaa0fd58e1dc6407d8cd020852
 
-# GPS - from kipper
+# GPS - from kipper ZNH2KAS7EC
 -lib64/libloc_api_v02.so:vendor/lib64/libloc_api_v02.so|9a978ba095a8c22b90127815a04b4c57e662bca9
 -lib64/libloc_ds_api.so:vendor/lib64/libloc_ds_api.so|6d2cc2dd6f1435955648fe0626ce79a7b6411416
 vendor/lib64/hw/flp.default.so|22300e06491cb1fdf9bbf8c816d3c789790d09b9
@@ -186,7 +186,7 @@ vendor/lib/libOmxAacDec.so|c4161397293f5bed3e991edc0055d5b258aba4cd
 vendor/lib/libOmxEvrcDec.so|b4ff4380a7e0335372d926663c8f9981ad615115
 vendor/lib/libOmxQcelp13Dec.so|b4110e3e9a959b4d1a5e0f42a31efb2d8fd0bf0c
 
-# Perf - from kipper
+# Perf - from kipper ZNH2KAS7EC
 bin/msm_irqbalance:vendor/bin/msm_irqbalance|fd509d009639a58fc9cda41d07375f3367e56e7f
 bin/perfd:vendor/bin/perfd|ce25f4e18962cc6de85c2ed7da8fe688c46a397e
 vendor/lib64/libqti-perfd-client.so|fdd692760698f5fcb7799e81d493a146f92246a8
@@ -202,7 +202,7 @@ vendor/lib64/libmm-disp-apis.so|c6c38201635c9b09877ac752cf3370b6a354ba10
 vendor/lib64/libmm-qdcm.so|c7f1a51304f4cc5aaf507acb6285a46a71b973cf
 vendor/lib64/libsensor1.so|677086b02650955a572caf379f8125c80eb4fba2
 
-# Qualcomm framework - from kipper
+# Qualcomm framework - from kipper ZNH2KAS7EC
 bin/irsc_util:vendor/bin/irsc_util|245ce5dc3473131d9a6f535bdfe06df692f77186
 vendor/lib64/libdiag.so|e5f10c1331389e2c42a31a410ec03a0d7cc2f29f
 vendor/lib64/libdsi_netctrl.so|2acc19f82a2eb6d11d588aec9bfed26caee0b0a9
@@ -237,7 +237,7 @@ vendor/lib/libqmiservices.so|472bf5a9d61998d492cf309ca94e0c36b9ff3f28
 vendor/lib/libqmi.so|c7e6fdce02808c8ce8a0a82a6970e77a23cc5686
 vendor/lib/libsmemlog.so|b87c633d0faa143db4744bd17de5b03d600df15e
 
-# Radio - from kipper, OnePlus 3 OxygenOS Open Beta 26/17
+# Radio - from kipper ZNH2KAS7EC, OnePlus 3 OxygenOS Open Beta 26/17
 -app/shutdownlistener/shutdownlistener.apk:vendor/app/shutdownlistener/shutdownlistener.apk|39061bdec43a83c496f7ad4d8faed54317efb0ef
 bin/netmgrd:vendor/bin/netmgrd|a86f77a08d78daa6471850ffa19880f6b8e99429
 bin/qmuxd:vendor/bin/qmuxd|f197d4794324518b9cfc20c12272bdbbed678d09
@@ -272,7 +272,7 @@ etc/firmware/venus.b04:vendor/firmware/venus.b04
 etc/firmware/venus.mbn:vendor/firmware/venus.mbn
 etc/firmware/venus.mdt:vendor/firmware/venus.mdt
 
-# STLport
+# STLport - from flo
 vendor/lib/libstlport.so|e61ef21decc21472e06eacc841e7d61bf68ca9f3
 
 # Thermal - from kipper TOS373M
