@@ -30,9 +30,9 @@ etc/acdbdata/QRD/QRD_Hdmi_cal.acdb
 etc/acdbdata/QRD/QRD_Headset_cal.acdb
 etc/acdbdata/QRD/QRD_Speaker_cal.acdb
 
-# Bluetooth - from kipper TOS373M
-bin/hci_qcomm_init:vendor/bin/hci_qcomm_init|516e78a98b50afbec28eae31700f065986ee4987
-vendor/lib64/libbtnv.so|cea1e5a7e09ac08f67567cf8ae0a37aee0ae95d2
+# Bluetooth - from kipper ZNH2KAS7EC
+bin/hci_qcomm_init:vendor/bin/hci_qcomm_init|2b2fc77aae8ddace236f7cbed20a859c09569e68
+vendor/lib64/libbtnv.so|60f90ce200c837fdb99cd579808c5c36c3aa0340
 
 # Camera
 bin/mm-qcamera-daemon:vendor/bin/mm-qcamera-daemon
