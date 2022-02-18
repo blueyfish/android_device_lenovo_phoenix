@@ -50,7 +50,7 @@ TARGET_KERNEL_CONFIG := lineageos_phoenix_defconfig
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/configs/rootdir/fstab.qcom
 
 # SELinux
-BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/private
+SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/private
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 
 # Vendor security patch level
