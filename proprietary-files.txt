@@ -34,15 +34,15 @@ etc/acdbdata/QRD/QRD_Speaker_cal.acdb
 bin/hci_qcomm_init:vendor/bin/hci_qcomm_init|2b2fc77aae8ddace236f7cbed20a859c09569e68
 vendor/lib64/libbtnv.so|60f90ce200c837fdb99cd579808c5c36c3aa0340
 
-# Camera
+# Camera - from Impress_Grip HW1.R1.V09
 bin/mm-qcamera-daemon:vendor/bin/mm-qcamera-daemon
 lib/libmm-qcamera.so:vendor/lib/libmm-qcamera.so
 lib/libmmcamera_interface.so:vendor/lib/libmmcamera_interface.so
 lib/libmmjpeg_interface.so:vendor/lib/libmmjpeg_interface.so
 lib/libqomx_core.so:vendor/lib/libqomx_core.so
 lib/hw/camera.msm8916.so:vendor/lib/hw/camera.vendor.msm8916.so
-vendor/lib/libjpegdhw.so
-vendor/lib/libjpegehw.so
+vendor/lib/libjpegdhw.so|ea4622b3a293a9dfa2245495c3e5b868e897fccf
+vendor/lib/libjpegehw.so|5ff5fd871efbdc852783b4b852e14049a5ccb26c
 vendor/lib/libmmcamera2_c2d_module.so
 vendor/lib/libmmcamera2_cpp_module.so
 vendor/lib/libmmcamera2_frame_algorithm.so
@@ -57,18 +57,17 @@ vendor/lib/libmmcamera2_stats_algorithm.so
 vendor/lib/libmmcamera2_stats_modules.so
 vendor/lib/libmmcamera2_vpe_module.so
 vendor/lib/libmmcamera2_wnr_module.so
-vendor/lib/libmmcamera_faceproc.so
-vendor/lib/libmmcamera_hdr_gb_lib.so
-vendor/lib/libmmcamera_hdr_lib.so
-vendor/lib/libmmcamera_imglib.so
-vendor/lib/libmmcamera_tintless_algo.so
-vendor/lib/libmmcamera_tintless_bg_pca_algo.so
-vendor/lib/libmmcamera_wavelet_lib.so
-vendor/lib/libmmjpeg.so
-vendor/lib/libmmqjpeg_codec.so
+vendor/lib/libmmcamera_faceproc.so|ac49bcc1aa20ff9f2c118f6c233b658f93543202
+vendor/lib/libmmcamera_hdr_gb_lib.so|715fe82684041f06a80bc306afeb738bea0c667c
+vendor/lib/libmmcamera_hdr_lib.so|12e9f6de8e513b7934ccd82f7f72a739744de21d
+vendor/lib/libmmcamera_imglib.so|45a5ba5af28fcae6f9330878ad43c10383cc65e3
+vendor/lib/libmmcamera_tintless_algo.so|611ad8b0ff82dec969894136b16f0edc3e1b7dda
+vendor/lib/libmmcamera_tintless_bg_pca_algo.so|15d488bab81d6f780b67e6d8a37040f43228dc2a
+vendor/lib/libmmcamera_wavelet_lib.so|92086d7f5846fedf3d8633efdcea810c2e4244ba
+vendor/lib/libmmjpeg.so|2543cdfc1c36145df8909dd282bc5ebaf0e571da
+vendor/lib/libmmqjpeg_codec.so|646dc526565778e9b06588c3aba6ff1ad95c03b6
 vendor/lib/liboemcamera.so
-vendor/lib/libqomx_jpegdec.so
-vendor/lib/libqomx_jpegenc.so
+vendor/lib/libqomx_jpegenc.so|b6feaa3c46bb545f339baff2be883e51c7e34a2d
 
 # Camera actuator
 vendor/lib/libactuator_dw9761.so
