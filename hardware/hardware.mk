@@ -22,6 +22,12 @@ PRODUCT_PACKAGES += \
     android.hardware.bluetooth.audio@2.0-impl \
     audio.bluetooth.default
 
+# Camera
+PRODUCT_PACKAGES += \
+    android.hardware.camera.provider@2.4-impl \
+    camera.msm8916 \
+    Snap
+
 # GPS
 PRODUCT_PACKAGES += \
     gps.msm8916

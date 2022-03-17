@@ -36,6 +36,7 @@ TARGET_RECOVERY_DEVICE_MODULES := libinit_phoenix
 # Shims
 TARGET_LD_SHIM_LIBS += \
     /system/vendor/lib/libmmcamera2_imglib_modules.so|libshim_atomic.so \
+    /system/vendor/lib/hw/camera.vendor.msm8916.so|libshim_atomic.so \
     /system/vendor/lib/libmmcamera2_stats_modules.so|libshim_camera.so
 
 # Vendor Interface Manifest
