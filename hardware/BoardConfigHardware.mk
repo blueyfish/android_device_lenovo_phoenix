@@ -14,12 +14,6 @@
 # limitations under the License.
 #
 
-# Camera
-TARGET_PROCESS_SDK_VERSION_OVERRIDE := \
-    /system/bin/cameraserver=22 \
-    /system/bin/mediaserver=22 \
-    /system/vendor/bin/mm-qcamera-daemon=22
-
 # Charger
 BACKLIGHT_PATH := /sys/class/leds/lcd-backlight/brightness
 
