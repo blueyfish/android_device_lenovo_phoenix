@@ -73,9 +73,6 @@ vendor/lib/libqomx_jpegenc.so|b6feaa3c46bb545f339baff2be883e51c7e34a2d
 vendor/lib/libactuator_dw9761.so
 vendor/lib/libactuator_dw9761_camcorder.so
 vendor/lib/libactuator_dw9761_camera.so
-vendor/lib/libactuator_dw9761b.so
-vendor/lib/libactuator_dw9761b_camcorder.so
-vendor/lib/libactuator_dw9761b_camera.so
 
 # Camera chromatix
 vendor/lib/libchromatix_ov5693_common.so
@@ -89,9 +86,6 @@ vendor/lib/libchromatix_ov13850_hfr_90fps.so
 vendor/lib/libchromatix_ov13850_hfr_120fps.so
 vendor/lib/libchromatix_ov13850_preview.so
 vendor/lib/libchromatix_ov13850_snapshot.so
-
-# Camera eeprom
-vendor/lib/libmmcamera_dw9761b_eeprom.so
 
 # Camera firmware
 etc/firmware/cpp_firmware_v1_4_0.fw:vendor/firmware/cpp_firmware_v1_4_0.fw
