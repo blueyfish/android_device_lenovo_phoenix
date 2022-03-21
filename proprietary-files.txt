@@ -34,7 +34,7 @@ etc/acdbdata/QRD/QRD_Speaker_cal.acdb
 bin/hci_qcomm_init:vendor/bin/hci_qcomm_init|2b2fc77aae8ddace236f7cbed20a859c09569e68
 vendor/lib64/libbtnv.so|60f90ce200c837fdb99cd579808c5c36c3aa0340
 
-# Camera - from Impress_Grip HW1.R1.V09
+# Camera - from Impress_Grip HW1.R1.V09, PB1-750M_S000685_170915_ROW
 bin/mm-qcamera-daemon:vendor/bin/mm-qcamera-daemon
 lib/libmm-qcamera.so:vendor/lib/libmm-qcamera.so
 lib/libmmcamera_interface.so:vendor/lib/libmmcamera_interface.so
@@ -49,7 +49,7 @@ vendor/lib/libmmcamera2_frame_algorithm.so
 vendor/lib/libmmcamera2_iface_modules.so
 vendor/lib/libmmcamera2_imglib_modules.so
 vendor/lib/libmmcamera2_is.so
-vendor/lib/libmmcamera2_isp_modules.so
+vendor/lib/libmmcamera2_isp_modules.so|60d78d3ea18202d8d71ec9d504b1d00c36f913c0
 vendor/lib/libmmcamera2_pproc_modules.so
 vendor/lib/libmmcamera2_q3a_core.so
 vendor/lib/libmmcamera2_sensor_modules.so
