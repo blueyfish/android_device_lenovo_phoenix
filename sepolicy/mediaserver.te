@@ -1,0 +1,4 @@
+#============= mediaserver ==============
+allow mediaserver sensorservice_service:service_manager find;
+
+get_prop(mediaserver, exported_camera_prop);
