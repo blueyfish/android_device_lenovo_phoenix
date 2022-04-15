@@ -19,9 +19,6 @@
 
 DEVICE_PATH := device/lenovo/phoenix
 
-# Bluetooth
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth/include
-
 # Display
 TARGET_SCREEN_DENSITY := 320
 
