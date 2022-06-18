@@ -2,3 +2,6 @@
 /(vendor|system/vendor)/bin/hw/android\.hardware\.light@2\.0-service\.phoenix                    u:object_r:hal_light_default_exec:s0
 /sys/devices/soc\.0/leds-qpnp-[0-9]+/leds(/.*)?                                                  u:object_r:sysfs_leds:s0
 /sys/devices/soc\.0/gpio-leds\.[0-9]+/leds(/.*)?                                                 u:object_r:sysfs_leds:s0
+
+# Touchscreen
+/sys/android_touch/gesture                                                                       u:object_r:sysfs_touchpanel:s0
