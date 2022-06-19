@@ -165,4 +165,7 @@
     <!-- Whether device supports double tap to wake -->
     <bool name="config_supportDoubleTapWake">true</bool>
 
+    <!-- Boolean indicating whether the WiFi chipset has 5GHz band support -->
+    <bool translatable="false" name="config_wifi5ghzSupport">true</bool>
+
 </resources>
