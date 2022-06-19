@@ -16,6 +16,7 @@
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
+PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += $(LOCAL_PATH)/overlay/packages/modules/Wifi/service/ServiceWifiResources
 
 # Device uses high-density artwork where available
 PRODUCT_AAPT_CONFIG := normal
