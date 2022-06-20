@@ -81,6 +81,7 @@ vendor/lib/libchromatix_ov5693_preview.so
 vendor/lib/libchromatix_ov5693_snapshot.so
 vendor/lib/libchromatix_ov5693_zsl.so
 vendor/lib/libchromatix_ov13850_common.so
+vendor/lib/libchromatix_ov13850_default_video.so
 vendor/lib/libchromatix_ov13850_hfr_60fps.so
 vendor/lib/libchromatix_ov13850_hfr_90fps.so
 vendor/lib/libchromatix_ov13850_hfr_120fps.so
