@@ -56,6 +56,9 @@ TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/configs/rootdir/fstab.qcom
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/private
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 
+# System Properties
+TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
+
 # Vendor security patch level
 VENDOR_SECURITY_PATCH := 2016-06-01
 
